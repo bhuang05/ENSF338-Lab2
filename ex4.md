@@ -27,7 +27,7 @@ Realistically, you cannot "teleport" to the room so a "step" is not a physical s
 3. This is a best case scenario. The reason why this is a best case scenario is because the value of the
    key (128) was found at the first comparison between **_arr[pos]_** and **_key_**
 
-4. If someone was given the floor layout, the best case would be if the "key" is either the room on the left (100) or the room on the right (130). In technical terms, the arr[hi] or arr[lo].
+4. If someone was given the floor layout, the best case would be if the "key" is either the room on the left (100) or the room on the right (138). In technical terms, the arr[hi] or arr[lo].
 
 The worst case scenario would be that the room you are looking for is right in the middle, namely room 118. No matter what, the person would have to walk the maximum distance to get to this room.
 
