@@ -19,7 +19,7 @@
    **And:**
    arr[pos] = 128
 
-In this case, the "steps" would be the amount of comparisons made between the _"room you are looking for"_ and the _"room you are at"_ which in code would be indicated by a conditional statement such as:
+Realistically, you cannot "teleport" to the room so a "step" is not a physical step but rather the thought of where the room could possibly be located, and then walking there and comparing the _"room you are looking for"_ and the _"room you are at"_ which in code would be indicated by a conditional statement such as:
 
     if (arr[pos] = key)
         return pos

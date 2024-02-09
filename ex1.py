@@ -2,12 +2,11 @@
 Exercise 1/3:
 1. This code in the function "func" recursively calculates the nth number in the Fibonacci sequence.
 
-2. Yes, as all the n-1 and n-2 function calls are calculating a smaller and smaller problem of the same type. 
-All of the sub problems are then added together to get the final result.
+2. No. All the function calls are calculating a smaller problem of the same type, not dividing the problem into smaller subproblems. 
 
 3. If you imagine each sub-function call as a tree, you should be able to see that the amount of problems
 created doubles with each call. 
-Thus, the time complexity of this function is O(2^(n-1)) as the function calls itself twice for each call.
+Thus, the time complexity of this function is O(2^n) as the function calls itself twice for each call.
 """
 
 import matplotlib.pyplot as plt
@@ -50,7 +49,7 @@ plt.plot(n, time)
 plt.xlabel("n")
 plt.ylabel("Time (s)")
 plt.title("Time complexity of func")
-plt.savefig('ex1.6.1.png')
+plt.savefig('ex1.6.1.jpg')
 
 plt.clf()
 
@@ -58,5 +57,5 @@ plt.plot(n, memo_time)
 plt.xlabel("n")
 plt.ylabel("Time (s)")
 plt.title("Time complexity of improved_func")
-plt.savefig('ex1.6.2.png')
+plt.savefig('ex1.6.2.jpg')
 
